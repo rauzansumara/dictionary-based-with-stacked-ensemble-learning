@@ -6,7 +6,6 @@ def run():
     
     # get dataset's names from 'datasets' folder
     subfolders = [os.path.split(f.path)[-1] for f in os.scandir('datasets') if f.is_dir()]
-    # subfolders = ['MiddlePhalanxOutlineCorrect','ProximalPhalanxOutlineCorrect']
 
     # looping clasification
     results = []

@@ -6,23 +6,15 @@ from sklearn.base import BaseEstimator
 from sklearn.utils.validation import check_array
 from numba import njit, prange
 from numba.typed import List
-from scipy.stats import norm
 from warnings import warn
 from sktime.transformations.panel.reduce import Tabularizer
 from pyts.bag_of_words import WordExtractor
-
 from keras.models import Model
 from keras.layers import Dense, Dropout, Input, Embedding, GRU, Conv1D, MaxPooling1D, \
     GlobalAveragePooling1D, AveragePooling1D, TextVectorization
 from keras.preprocessing.text import Tokenizer
 from keras.utils import to_categorical
 from keras import optimizers
-
-# from pyts.approximation import SymbolicAggregateApproximation
-# from ..base import UnivariateTransformerMixin
-# from ..preprocessing import KBinsDiscretizer
-
-# from ..base import UnivariateTransformerMixin
 
 
 class UnivariateTransformerMixin:
