@@ -26,12 +26,3 @@ Note: `YourDataSet` is a name of particular dataset from the website.
 You can run `python run_all.py` to test the classifier on every data set from `datasets/` folder (It is not recommended at the moment).
 
 Please note that this script might only run on Windows systems.
-
-## Results
-<p align="center">
-  <img src="images/comparison_scatter.png" style="width:800px; height:800px"/>
-</p>
-
-<p align="center">
-  <img src="images/boxplot.png" style="width:800px; height:450px"/>
-</p>
